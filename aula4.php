@@ -24,4 +24,12 @@ $diff = array_diff($notasBimestre1, $notasBimestre2);
 $nomesAlunos = array_keys($diff); #retorna array com as keys
 $notasAlunos = array_values($diff); #retorna array com os valores
 
-var_dump(array_combine($nomesAlunos, $nomesAlunos)); #Combina, criando array invertido
+var_dump(array_combine($notasAlunos, $nomesAlunos)); #Combina, criando array invertido
+
+#unindo Listas
+
+$todasNotas = array_merge($notasBimestre1, $notasBimestre2);
+
+$todasNotas2 = [...$notasBimestre1, ...$notasBimestre2];
+
+echo $todasNotas == $todasNotas2 . PHP_EOL;
