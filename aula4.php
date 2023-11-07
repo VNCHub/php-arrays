@@ -30,6 +30,6 @@ var_dump(array_combine($notasAlunos, $nomesAlunos)); #Combina, criando array inv
 
 $todasNotas = array_merge($notasBimestre1, $notasBimestre2);
 
-$todasNotas2 = [...$notasBimestre1, ...$notasBimestre2];
+$todasNotas2 = [...$notasBimestre1, ...$notasBimestre2]; #Array unpaking
 
 echo $todasNotas == $todasNotas2 . PHP_EOL;
