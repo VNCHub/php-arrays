@@ -17,6 +17,12 @@ $alunos = [
     'Clarissa',
 ];
 
-array_push($alunos, "Jorge", "Fred"); #adiciona no final do arquivo
+#Funções de adicionar
+array_push($alunos, "Jorge", "Fred"); #adiciona no final do array
+array_unshift($alunos,"Marques","Richard"); #adiciona no inicio do array
+
+#Funções de remover
+$value = array_shift($alunos); #remove no inicio do array
+$secondValue = array_pop($alunos); #remove do final do array
 
 var_dump($alunos);
